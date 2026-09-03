@@ -1,0 +1,13 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "tip4p.itp"
+#include "ions.itp"
+
+
+[ system ]
+Gas In Water in water
+
+[ molecules ]
+NA               135
+CL               135
+
+SOL              6850

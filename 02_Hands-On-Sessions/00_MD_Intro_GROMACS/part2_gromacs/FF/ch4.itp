@@ -1,0 +1,9 @@
+; United-atom methane molecule (single interaction site)
+
+[ moleculetype ]
+; Name    nrexcl
+CH4       1
+
+[ atoms ]
+; nr  type  resnr  residue  atom  cgnr  charge  mass
+   1  CH4      1     CH4    CH4     1    0.000  16.043

@@ -1,0 +1,10 @@
+#include "../inputs/oplsaa.ff/forcefield.itp"
+#include "../inputs/CO2.itp"
+#include "../inputs/spce.itp"
+
+[ system ]
+CO2 in water
+
+[ molecules ]
+CO2    10
+SOL              2137

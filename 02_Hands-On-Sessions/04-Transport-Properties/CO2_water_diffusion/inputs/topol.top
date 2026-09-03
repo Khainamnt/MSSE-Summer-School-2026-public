@@ -1,0 +1,9 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "CO2.itp"
+#include "spce.itp"
+
+[ system ]
+CO2 in water
+
+[ molecules ]
+CO2               10

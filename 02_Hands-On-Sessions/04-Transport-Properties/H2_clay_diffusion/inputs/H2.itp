@@ -1,0 +1,18 @@
+[ moleculetype ]
+; name  nrexcl
+H2	3
+
+[ atoms ]
+;   nr    type   resnr  residu    atom    cgnr        charge          mass
+     1       HH       1     H2       HH      1   0.0000
+     2       HH       1     H2       HH      1   0.0000
+   
+[ bonds ]
+;  ai    aj funct           c0           c1
+
+[ angles ]
+;  ai    aj    ak funct           c0        c1
+
+[ constraints ]
+;  ai    aj funct  r0
+1     2     1     0.074

@@ -1,0 +1,11 @@
+source /usr/local/gromacs/bin/GMXRC
+gmx insert-molecules -ci CO2.pdb -o Box1.gro -nmol 100 -box 4.5 4.5 4.5
+gmx insert-molecules -f Box1.gro -ci H2.pdb -o Box2.gro -nmol 100
+gmx solvate -cp Box2.gro -cs spc216 -o Box4.gro -p topol.top
+gmx grompp -f em.mdp -c Box4.gro -p topol.top -o em.tpr
+gmx mdrun -deffnm em -v -nb gpu
+gmx grompp -f npt.mdp -c em.gro -p topol.top -o npt.tpr
+gmx mdrun -deffnm npt -v -nb gpu
+gmx grompp -f md.mdp -c npt.gro -p topol.top -o md.tpr
+gmx mdrun -deffnm md -v -nb gpu
+gmx msd -f md.xtc -s md.tpr -o MSDTraPPE-Flex1molarJC298.xvg

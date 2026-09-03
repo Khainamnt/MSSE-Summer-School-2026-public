@@ -1,0 +1,8 @@
+REMARK   1 File created by GaussView 5.0.8
+HETATM    1  C_3 CO2     0      -0.359  -0.378   0.000                       C
+HETATM    2  O2  CO2     0       0.801  -0.378   0.000                       O
+HETATM    3  O2  CO2     0      -1.519  -0.378   0.000                       O
+END
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1

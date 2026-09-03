@@ -1,0 +1,12 @@
+; Methane (UA) liquid–vapour slab — teaching coexistence
+; TraPPE-like ε/kB ≈ 148 K; use absolute T in kelvin in the MDP (ref_t).
+
+#include "../FF/lj_methane.itp"
+#include "../FF/ch4.itp"
+
+[ system ]
+Methane liquid-vapour slab (united-atom)
+
+[ molecules ]
+; Compound   #mols
+CH4          500

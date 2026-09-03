@@ -1,0 +1,14 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "CO2.itp"
+#include "H2.itp"
+#include "spce.itp"
+#include "ions.itp"
+
+[ system ]
+Gas In Water in water
+
+[ molecules ]
+CO2               10
+H2                10
+NA                51
+CL                51

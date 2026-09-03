@@ -1,0 +1,10 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "H2.itp"
+
+
+[ system ]
+H2 Phase
+
+[ molecules ]
+H2	458
+

@@ -1,0 +1,11 @@
+#include "../inputs/oplsaa.ff/forcefield.itp"
+#include "../inputs/CO2.itp"
+#include "../inputs/H2.itp"
+
+
+[ system ]
+Gas In Water in water
+
+[ molecules ]
+CO2               1000
+H2                1000

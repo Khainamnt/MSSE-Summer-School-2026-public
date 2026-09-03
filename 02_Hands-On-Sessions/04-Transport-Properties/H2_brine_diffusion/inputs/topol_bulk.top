@@ -1,0 +1,12 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "H2.itp"
+#include "spce.itp"
+#include "ions.itp"
+
+[ system ]
+H2 in brine
+
+[ molecules ]
+H2               10
+NA                51
+CL                51

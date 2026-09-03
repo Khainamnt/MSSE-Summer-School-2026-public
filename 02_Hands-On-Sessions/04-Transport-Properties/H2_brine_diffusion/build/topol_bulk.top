@@ -1,0 +1,13 @@
+#include "../inputs/oplsaa.ff/forcefield.itp"
+#include "../inputs/H2.itp"
+#include "../inputs/spce.itp"
+#include "../inputs/ions.itp"
+
+[ system ]
+H2 in brine in water
+
+[ molecules ]
+H2               10
+NA                51
+CL                51
+SOL              2019

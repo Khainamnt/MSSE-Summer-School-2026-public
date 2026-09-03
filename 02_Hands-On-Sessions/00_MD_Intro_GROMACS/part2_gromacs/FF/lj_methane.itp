@@ -1,0 +1,14 @@
+; United-atom methane (TraPPE-UA style) for teaching liquid–vapour coexistence.
+; One LJ site = CH4. Standard for alkane phase equilibria; geological hook: natural gas / hydrates.
+;
+; σ = 0.373 nm
+; ε/kB ≈ 148 K  →  ε ≈ 1.2305 kJ mol⁻¹
+; No charges in UA methane (Coulomb enters in water/brine/clay FFs later).
+
+[ defaults ]
+; nbfunc  comb-rule  gen-pairs  fudgeLJ  fudgeQQ
+1         2          yes        0.5      0.8333
+
+[ atomtypes ]
+; name   at.num  mass     charge  ptype  sigma (nm)  epsilon (kJ/mol)
+  CH4     6       16.043   0.000   A      0.3730      1.2305

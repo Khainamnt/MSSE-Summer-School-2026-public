@@ -1,0 +1,10 @@
+REMARK    THIS IS A SIMULATION BOX
+MODEL        1
+ATOM      1  H    H2     1      -0.000   0.000   0.3700  1.00  0.00            
+ATOM      2  MH2  H2     1       0.000  -0.000   0.0000  1.00  0.00            
+ATOM      3  H    H2     1       0.000  -0.000  -0.3700  1.00  0.00            
+TER
+ENDMDL
+CONECT    1    2    3
+CONECT    1    2
+CONECT    3    2

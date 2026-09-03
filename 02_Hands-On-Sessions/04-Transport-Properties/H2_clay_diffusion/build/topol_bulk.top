@@ -1,0 +1,29 @@
+#include "../inputs/Clay.ff/forcefield.itp"
+
+[ atomtypes ]
+
+
+
+#include "../inputs/MMT1.itp"
+#ifdef POSRES_P1
+#include "../inputs/POSRE-P1.itp"
+#endif  
+#include "../inputs/MMT2.itp"
+#ifdef POSRES_P2
+#include "../inputs/POSRE-P2.itp"
+#endif  
+#include "../inputs/Clay.ff/ions.itp"
+#include "../inputs/Clay.ff/spc.itp"
+#include "../inputs/H2.itp"
+
+[ system ]
+; Name
+H2 SDC in MMT (12*7*2) d=80 A
+
+[ molecules ]
+; Compound        #mols
+MMT1	1
+MMT2	1
+Na	168
+H2	40
+SOL             10529
